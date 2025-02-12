@@ -1,0 +1,16 @@
+<prompt>
+  <task>
+    Analyze the extracted AWS architecture diagram and validate its correctness.
+  </task>
+  <instructions>
+    1. Identify AWS services used (EC2, Lambda, S3, etc.).
+    2. Verify architectural consistency and best practices.
+    3. Ensure that security and scalability considerations are met.
+  </instructions>
+  <output>
+    AWS Diagram Validation: [Valid/Invalid]
+    Identified Services: [List of AWS services]
+    Architecture Issues: [List of detected issues]
+    Recommendations: [Suggested improvements]
+  </output>
+</prompt>

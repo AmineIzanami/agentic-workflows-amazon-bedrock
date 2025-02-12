@@ -1,0 +1,102 @@
+project_name: "nokbvalidsow"
+
+agents:
+  analyse_image_document:
+    agent_name: "${project_name}-AnalyseImagePdf"
+    instruction_file: "PDFImageAnalyzer.xml"
+    collaborator_order: 0
+    activate: True
+    to_collaborate: True
+    foundation_model: "anthropic.claude-3-sonnet-20240229-v1:0"
+    knowledge_base: True
+    agent_action_group: [ "agent_analyse_image_in_document" ] #the name of the agent action need to match the name how it is declared in the genai layer stack
+    collaborator_instruction: "Call this agent to analyze images in the Statement of Work (SoW) to get more context from the images."
+
+  structural_compliance:
+    agent_name: "${project_name}-StructuralComplianceAgent"
+    instruction_file: "StructuralComplianceAgent.xml"
+    collaborator_order: 1
+    activate: True
+    to_collaborate: True
+    foundation_model: "anthropic.claude-3-haiku-20240307-v1:0"
+    knowledge_base: True
+    agent_action_group: [ "agent_get_s3_file" ]
+    collaborator_instruction: "Call this agent to validate the structure and format of the SoW document."
+
+  technical_scope_validation:
+    agent_name: "${project_name}-TechnicalScopeValidationAgent"
+    instruction_file: "TechnicalScopeValidationAgent.xml"
+    collaborator_order: 2
+    activate: True
+    to_collaborate: True
+    foundation_model: "anthropic.claude-3-haiku-20240307-v1:0"
+    knowledge_base: True
+    agent_action_group: [ "agent_get_s3_file" ]
+    collaborator_instruction: "Call this agent to validate the technical feasibility of the SoW."
+
+  business_financial_validation:
+    agent_name: "${project_name}-BusinessFinancialValidationAgent"
+    instruction_file: "BusinessFinancialValidationAgent.xml"
+    collaborator_order: 3
+    activate: True
+    to_collaborate: True
+    foundation_model: "anthropic.claude-3-haiku-20240307-v1:0"
+    knowledge_base: True
+    agent_action_group: [ "agent_get_s3_file" ]
+    collaborator_instruction: "Call this agent to verify the financial details, investment, and cost breakdown of the SoW."
+
+  risk_compliance:
+    agent_name: "${project_name}-RiskComplianceAgent"
+    instruction_file: "RiskComplianceAgent.xml"
+    collaborator_order: 4
+    activate: True
+    to_collaborate: True
+    foundation_model: "anthropic.claude-3-haiku-20240307-v1:0"
+    knowledge_base: True
+    agent_action_group: [ "agent_get_s3_file" ]
+    collaborator_instruction: "Call this agent to analyze potential risks and compliance issues within the SoW."
+
+  delivery_milestones_validation:
+    agent_name: "${project_name}-DeliveryMilestonesValidationAgent"
+    instruction_file: "DeliveryMilestonesValidationAgent.xml"
+    collaborator_order: 5
+    activate: True
+    to_collaborate: True
+    foundation_model: "anthropic.claude-3-haiku-20240307-v1:0"
+    knowledge_base: True
+    agent_action_group: [ "agent_get_s3_file" ]
+    collaborator_instruction: "Call this agent to ensure the project milestones and deliverables are realistic and well-defined."
+
+  ai_consistency:
+    agent_name: "${project_name}-AIConsistencyAgent"
+    instruction_file: "AIConsistencyAgent.xml"
+    collaborator_order: 6
+    activate: True
+    to_collaborate: True
+    foundation_model: "anthropic.claude-3-haiku-20240307-v1:0"
+    knowledge_base: True
+    agent_action_group: [ "agent_get_s3_file" ]
+    collaborator_instruction: "Call this agent to validate AI-related elements within the SoW, including model selection and feasibility."
+
+  aws_architecture_validation:
+    agent_name: "${project_name}-AWSArchitectureValidationAgent"
+    instruction_file: "AWSArchitectureValidationAgent.xml"
+    collaborator_order: 7
+    activate: True
+    to_collaborate: True
+    foundation_model: "anthropic.claude-3-sonnet-20240229-v1:0"
+    knowledge_base:
+    agent_action_group: [ "agent_get_s3_file" ]
+    collaborator_instruction: "Call this agent to validate AWS architecture diagrams, extract AWS service details, and check compliance with best practices."
+
+  supervisor:
+    agent_name: "${project_name}-SupervisorAgent"
+    instruction_file: "SupervisorAgent.xml"
+    activate: True
+    supervisor: True
+    agent_description: "Supervisor Agent responsible for orchestrating the other collaborator agents."
+    foundation_model: "anthropic.claude-3-sonnet-20240229-v1:0"
+    knowledge_base: False
+    agent_action_group: [ "agent_get_s3_file" ]
+
+

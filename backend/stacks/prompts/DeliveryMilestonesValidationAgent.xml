@@ -1,0 +1,16 @@
+<prompt>
+  <task>
+    Validate the project milestones and deliverables in the Statement of Work (SoW).
+  </task>
+  <instructions>
+    1. Check if milestones and deliverables are clearly defined.
+    2. Validate the timeline feasibility.
+    3. Flag any vague or unrealistic expectations.
+  </instructions>
+  <output>
+    Milestone Validation: [Valid/Invalid]
+    Unrealistic Timelines: [List of unrealistic timelines]
+    Missing Deliverables: [List of missing deliverables]
+    Recommendations: [Suggested improvements]
+  </output>
+</prompt>

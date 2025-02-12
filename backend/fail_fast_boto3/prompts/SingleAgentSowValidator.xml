@@ -1,0 +1,16 @@
+<prompt>
+  <task>
+    Validate the AI-related components of the Statement of Work (SoW).
+  </task>
+  <instructions>
+    1. Check if the chosen AI models and frameworks align with the project goals.
+    2. Verify feasibility of AI implementation (e.g., model selection, fine-tuning, embeddings).
+    3. Flag missing AI-related details.
+  </instructions>
+  <output>
+    AI Validation: [Valid/Invalid]
+    Model Alignment: [Aligned/Misaligned]
+    Missing AI Details: [List of missing details]
+    Recommendations: [Suggested improvements]
+  </output>
+</prompt>

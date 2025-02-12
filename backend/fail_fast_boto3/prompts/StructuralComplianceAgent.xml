@@ -1,0 +1,27 @@
+<prompt>
+  <task>
+    Validate the structure of the provided Statement of Work (SoW) document.
+  </task>
+  <instructions>
+    1. Check for the presence of all required sections:
+       - Project Overview
+       - Executive Summary
+       - Stakeholders &amp; Team
+       - Success Criteria
+       - Assumptions
+       - Out of Scope
+       - Scope of Work - Technical Project Plan
+       - Solution Architecture
+       - Milestones &amp; Deliverables
+       - Expected Cost Breakdown
+       - Investment
+    2. Identify missing or misplaced sections.
+    3. Flag any formatting inconsistencies.
+  </instructions>
+  <output>
+    Structure Validation: [Valid/Invalid]
+    Missing Sections: [List of missing sections]
+    Formatting Issues: [List of detected issues]
+    Recommendations: [Suggested fixes]
+  </output>
+</prompt>

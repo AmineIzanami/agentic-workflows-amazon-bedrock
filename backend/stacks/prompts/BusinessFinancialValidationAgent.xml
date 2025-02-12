@@ -1,0 +1,16 @@
+<prompt>
+  <task>
+    Validate the financial breakdown and investment section of the Statement of Work (SoW).
+  </task>
+  <instructions>
+    1. Verify the presence of cost breakdown and investment sections.
+    2. Check if cost estimates align with industry benchmarks.
+    3. Identify missing or unclear financial details.
+  </instructions>
+  <output>
+    Financial Validation: [Valid/Invalid]
+    Missing Details: [List of missing details]
+    Cost Estimate Accuracy: [Accurate/Inaccurate]
+    Recommendations: [Suggested fixes]
+  </output>
+</prompt>

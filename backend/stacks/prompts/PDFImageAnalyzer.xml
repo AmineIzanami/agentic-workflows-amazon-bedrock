@@ -1,0 +1,14 @@
+<prompt>
+  <task>
+    Analyze the image in a PDF to determine its type and provide a description.
+  </task>
+  <instructions>
+    1. Extract the image from the PDF.
+    2. Identify the type of image (e.g., photograph, diagram, chart, scanned document).
+    3. Generate a detailed description of the image's content.
+  </instructions>
+  <output>
+    Image Type: [Photograph/Diagram/Chart/Scanned Document/etc.]
+    Description: [Detailed description of the image]
+  </output>
+</prompt>

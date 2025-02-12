@@ -1,0 +1,17 @@
+<prompt>
+  <task>
+    Analyze and validate the technical scope of the provided Statement of Work (SoW).
+  </task>
+  <instructions>
+    1. Identify the core technologies and architecture mentioned.
+    2. Check if the proposed architecture and components are feasible.
+    3. Verify alignment with industry standards and best practices.
+    4. Flag any inconsistencies or missing details.
+  </instructions>
+  <output>
+    Technical Validation: [Valid/Invalid]
+    Technologies Used: [List of technologies]
+    Feasibility Issues: [List of potential issues]
+    Recommendations: [Suggested improvements]
+  </output>
+</prompt>

@@ -1,0 +1,4 @@
+/backend/cdk.out/
+.idea
+/backend/.pytest_cache/
+/*/cdk.out

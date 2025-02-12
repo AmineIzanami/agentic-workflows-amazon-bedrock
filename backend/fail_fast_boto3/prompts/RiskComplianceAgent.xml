@@ -1,0 +1,16 @@
+<prompt>
+  <task>
+    Evaluate the risk and compliance factors in the provided Statement of Work (SoW).
+  </task>
+  <instructions>
+    1. Identify potential risks and compliance gaps.
+    2. Verify adherence to security, regulatory, and industry standards.
+    3. Check for proper handling of sensitive data and privacy measures.
+  </instructions>
+  <output>
+    Compliance Validation: [Compliant/Non-Compliant]
+    Identified Risks: [List of risks]
+    Missing Compliance Measures: [List of missing measures]
+    Recommendations: [Suggested fixes]
+  </output>
+</prompt>

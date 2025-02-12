@@ -1,0 +1,67 @@
+{
+  "app": "python app.py",
+  "watch": {
+    "include": [
+      "**"
+    ],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "requirements*.txt",
+      "source.bat",
+      "**/__init__.py",
+      "**/__pycache__",
+      "tests"
+    ]
+  },
+  "context": {
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
+    "aws-cdk:profile": "default",
+    "@aws-cdk/core:checkSecretUsage": true,
+    "@aws-cdk/core:target-partitions": [
+      "aws",
+      "aws-cn"
+    ],
+    "@aws-cdk/aws-iam:minimizePolicies": true,
+    "@aws-cdk/core:validateSnapshotRemovalPolicy": true,
+    "@aws-cdk/aws-s3:createDefaultLoggingPolicy": true,
+    "@aws-cdk/core:enablePartitionLiterals": true,
+    "@aws-cdk/aws-events:eventsTargetQueueSameAccount": true,
+    "@aws-cdk/aws-iam:standardizedServicePrincipals": true,
+    "@aws-cdk/aws-iam:importedRoleStackSafeDefaultPolicyName": true,
+    "@aws-cdk/aws-s3:serverAccessLogsUseBucketPolicy": true,
+    "@aws-cdk/customresources:installLatestAwsSdkDefault": true,
+    "@aws-cdk/core:includePrefixInUniqueNameGeneration": true,
+    "@aws-cdk/aws-opensearchservice:enableOpensearchMultiAzWithStandby": true,
+    "@aws-cdk/aws-lambda-nodejs:useLatestRuntimeVersion": true,
+    "@aws-cdk/aws-cloudwatch-actions:changeLambdaPermissionLogicalIdForLambdaAction": true,
+    "@aws-cdk/aws-s3:keepNotificationInImportedBucket": false,
+    "DeploymentEnvironments": {
+      "dev": {
+        "ACCOUNT_ID": "012345678901",
+        "REGION": "eu-west-3",
+        "VPC_ID": "vpc-012345678901",
+        "Environment": "dev",
+        "RESOURCE_PREFIX": "<your_resource_prefix>",
+        "BEDROCK_REGION_NAME": "us-west-2",
+        "PROJECT_AGENT_NAME": "sowchecker",
+        "KB_DOCS_S3_BUCKET_NAME": "reply-sow-validator",
+        "AGENT_FOUNDATION_MODEL": "anthropic.claude-3-sonnet-20240229-v1:0",
+        "KB_CONFIGURATION": {
+          "OSS_COLLECTION_NAME": "<collection_name>",
+          "OSS_INDEX_NAME": "kb-input-doc"
+        },
+        "STANDALONE_GENAI_LAYER": true,
+        "STACK-TAGS": {
+          "Environment": "dev",
+          "Domain": "Analytics",
+          "WorkloadName": "<workload_name>",
+          "BusinessUnit": "<bu_tag>",
+          "Owner": "<owner_tag>",
+          "CostCenter": "<cost_center_tag>",
+          "Product": "<product_name>"
+        }
+      }
+    }
+  }
+}

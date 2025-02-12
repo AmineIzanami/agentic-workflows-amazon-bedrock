@@ -1,0 +1,1 @@
+SSM_KB_INPUT_BUCKET_NAME="kb-bucket-input-docs-name"
