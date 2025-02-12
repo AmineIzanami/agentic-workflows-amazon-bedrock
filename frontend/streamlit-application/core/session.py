@@ -48,7 +48,7 @@ class SessionManager:
         return st.session_state.uploaded_files
 
     def add_user_message(self, content: str, s3_handler: S3Handler) -> None:
-        extra_prompt_details = f"<extra-prompt>s3_uri_path={s3_handler.latest_s3_uri}</extra-prompt> \n"
+        extra_prompt_details = f"This is the s3 url path for my document {s3_handler.latest_s3_uri}  \n"
         st.session_state.messages.append({"role": "user", "content": extra_prompt_details + content})
 
     def add_assistant_message(
