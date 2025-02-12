@@ -424,7 +424,7 @@ Here are some potential improvements that can enhance the functionality and robu
       stack before deployment. This ensures robust tool performance and easier debugging without needing full
       infrastructure deployment.
 
-## Special thanks
+## Acknowledgements
 
 A special thanks to GitHub user [maxritter](https://github.com/maxritter) for his Streamlit application for testing
 multi-agent workflows, which has been a valuable reference for improving this project.
@@ -434,6 +434,11 @@ Typescript:  https://github.com/maxritter/aws-bedrock-multi-agent-blueprint/tree
 ## Contributing
 
 Contributions are welcome! Please follow the standard **GitHub flow** for submitting pull requests.
+
+If you want to work with me (on your next Agent project on AWS), please get in touch via:
+
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amineaitelharraj/)
+
 
 ## License
 
