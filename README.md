@@ -4,7 +4,7 @@
 
 This project is a lightweight multi-agent framework designed to easily build and deploy multi-agent solutions on *
 *Amazon Bedrock** using AWS **CDK (Cloud Development Kit)**. It provides infrastructure and tooling for developers to
-create AI-powered agent workflows at scale.
+create AI-powered agent workflows at scale, fully powered by AWS Managed Services—no third-party tools or packages needed such as LangChain or CrewAI
 
 ## Features
 
