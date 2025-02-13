@@ -31,7 +31,7 @@ To quickly set up and deploy the multi-agent system, simply:
 
 1. **Update the configuration file** at `backend/stacks/configuration/agent_config.yaml` with your custom agent
    definitions.
-2. **Deploy the stack** using AWS CDK:
+2. Update the cdk.json file at `backend/cdk.json` and **Deploy the stack** using AWS CDK:
 
    ```bash
    cd backend
