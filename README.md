@@ -24,6 +24,7 @@ Before setting up the project, ensure you have the following:
 - **Node.js (>= 14.x)** and **npm**
 - **AWS CDK (>= 2.x)** installed globally (`npm install -g aws-cdk`)
 - **Python 3.8+** with dependencies installed
+- A good understanding of AWS CDK and how to set up **AWS credentials**
 
 ## TL;DR
 
